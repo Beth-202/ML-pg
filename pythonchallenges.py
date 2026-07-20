@@ -58,3 +58,89 @@ if len(password) >= 4:
         print("please include a number in your password")
 else:
     print("invalid")
+# calculate averages
+def calc_avg(x,y):
+    return (x+y)/2
+
+
+
+# find maximum 
+
+def fin_max(x,y):
+    if x>y:
+        return x
+    else:
+        return y
+    
+
+# clear text
+
+
+def clear_text(text):
+    return text.strip().lower().replace(" ", "")
+
+
+# count vowels
+
+
+def count_vowels(text):
+    vowels = "aeiou"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
+
+
+
+
+
+
+def count_vowels(text):
+    vowels = 'aeiou'
+    count = 0
+    for letter in text:
+        if letter in vowels:
+            count +=1
+    return count
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# check palindrome: if not say not palindrome, if so say it's palindrome
+
+def check_palindrome(word):
+    word = clear_text(word)
+    if word == word[::-1]:
+        return True
+    else:
+        return False
+
+
+
+
+
+def check_negative(num):
+    if num > 0:
+        return False
+    else:
+        return True
+
+
+print(check_negative(-5))
+
+def check_palindrome(word):
+    if word == word[::-1]:
+        return True
+    else:
+        return False
