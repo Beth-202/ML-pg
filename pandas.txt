@@ -7,7 +7,25 @@ In this notebook, we will look at Pandas' functionalities using an actual datase
 This is a library that will be used in later chapters as well, so let's make sure you have a good understanding of it here.
 If you would like to learn Pandas more, please refer to the official documentation ([https://pandas.pydata.org/](https://pandas.pydata.org/)).
 
+I want specific columns
+        ↓
+      df[...]
 
+I want specific positions
+        ↓
+      .iloc
+
+I want specific labels
+        ↓
+      .loc
+
+I want rows satisfying conditions
+        ↓
+   Boolean masking
+
+I want to sort
+        ↓
+   sort_values()
 
 pd.read_csv()
 
