@@ -40,3 +40,19 @@ df.iloc[0, 3]	row 0, column 3
 df.iloc[0:3, 0:3]	rows 0–2 AND columns 0–2
 df['Name']	column Name
 df[['Name', 'Score']]	columns Name and Score
+
+RAW DATA
+   ↓
+inspect
+   ↓
+identify problems
+   ↓
+clean
+   ↓
+create features
+   ↓
+filter / investigate
+   ↓
+groupby / aggregate
+   ↓
+draw conclusions
