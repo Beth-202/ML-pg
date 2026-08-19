@@ -56,3 +56,70 @@ filter / investigate
 groupby / aggregate
    ↓
 draw conclusions
+
+DAY 2 — Ask the Dataset Questions 🔎
+Theme: "Show me exactly the passengers I'm interested in."
+Skills
+
+column selection, [], .loc, .iloc, Boolean masking, &, |, ~, isin, between, query, sort_values
+
+Now we're going to investigate the Titanic story.
+
+Questions
+
+1. What did the typical survivor look like?
+
+Find all survivors and inspect their characteristics.
+
+2. Which passengers were particularly vulnerable?
+
+Find:
+
+children
+elderly passengers
+third-class passengers
+
+3. Did women survive more often than men?
+
+Filter female survivors and male survivors.
+
+4. Who were the wealthiest passengers?
+
+Find the 10 passengers who paid the highest fares.
+
+Then inspect their:
+
+Name
+Age
+Sex
+Pclass
+Fare
+Survived
+
+5. Who were the youngest survivors?
+
+Find the 10 youngest passengers who survived.
+
+6. Find passengers who satisfy ALL of these:
+
+Female + first class + survived + age between 20 and 40.
+
+7. Find passengers who satisfy either:
+
+Male AND first class
+OR
+Female AND third class.
+
+8. Recreate three of your filters using .query().
+
+🔥 Final question
+
+Based on your filtering, what patterns are starting to emerge about survival?
+
+Write 3–5 observations.
+
+What you're learning
+
+You're learning that Pandas isn't just "manipulating tables."
+
+It's letting you interrogate data.
