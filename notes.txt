@@ -1,0 +1,19 @@
+# Calculate 7-day moving average
+df["rolling_7"] = df["cnt"].rolling(7).mean()
+
+plt.figure(figsize=(10, 5))
+
+# Original daily rentals
+plt.plot(df["dteday"], df["cnt"], label="Daily rentals")
+
+# 7-day moving average
+plt.plot(df["dteday"], df["rolling_7"], label="7-day moving average")
+
+# Monthly ticks
+plt.gca().xaxis.set_major_locator(mdates.MonthLocator())
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m"))
+
+plt.legend()
+
+plt.tight_layout()
+plt.show()
