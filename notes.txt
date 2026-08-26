@@ -1,3 +1,4 @@
+condition → Boolean Series → use it to filter DataFrame
 # Calculate 7-day moving average
 df["rolling_7"] = df["cnt"].rolling(7).mean()
 
